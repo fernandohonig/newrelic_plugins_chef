@@ -16,6 +16,9 @@ recipe 'newrelic_plugins::rackspace_load_balancers', 'Installs New Relic Rackspa
 recipe 'newrelic_plugins::wikipedia_example_java', 'Installs New Relic Wikipedia Example Java Plugin'
 recipe 'newrelic_plugins::wikipedia_example_ruby', 'Installs New Relic Wikipedia Example Ruby Plugin'
 
+depends 'ruby'
+depends 'rubygems'
+
 %w{ debian ubuntu centos suse fedora redhat }.each do |os|
   supports os
 end
